@@ -1,0 +1,330 @@
+
+
+            /* MAIN */
+
+html{
+    width: 100%; 
+    height:100%;
+}
+body{min-width: 100%; 
+    height:100%;
+    background-color: #f5f5f5;
+    padding:5em;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+
+    width:90%;
+    margin:0 auto;
+    padding:50px;
+    background-color: white;
+}
+
+
+            /* TABLES 1 */
+
+#calc-bd{
+    width:100%;
+}
+
+#new-calc{
+    
+    width:100%;
+    display:inline-flex;
+    margin:0 auto;
+    position: relative;
+    flex-flow: wrap;
+    justify-content: center;
+    
+}
+#calc-header, #calc-body{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+.hdng, #calc-body .meal{
+    width:100px;
+    text-align: center;
+    border:solid black 1px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.portions{
+    width:100px;
+}
+#calc-bd .bd-row{
+    width:100%;
+    position: relative;
+    display:flex;
+    margin-top: 10px;
+}
+
+.bd-row{
+    width:100%;
+    position: relative;
+    display:flex;
+    justify-content: space-around
+    
+}
+.bd-row:after{
+    position: absolute;
+    right:0;
+    content: "";
+    width:calc(100% - 26%);
+    top:-10px;
+}
+
+#calc-bd .bd-row .element{
+    width: 100px;
+    position: relative;
+
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    
+}
+#calc-bd .bd-row .food{
+    width: 150px;
+
+    
+}
+#table-bd .bd-row .element{
+    width: 100px;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+.add-new-row{
+   top: 4px;
+   position:absolute;
+   left:14px;
+   z-index:99;
+}
+.total{
+   width: 610px;
+   box-sizing: border-box;
+   justify-content: center;
+   text-align: center;
+   font-size: 30px;
+}
+.total-row{
+    padding-top:10px;
+    border-top:solid gray 1px;
+    border-bottom:solid gray 1px;
+    border-radius: 5px;
+    background-color: rgb(207, 202, 202);
+}
+
+                /* SELECT ELEMENT */
+select{                
+    margin: 0;
+    width:30%;
+    clear: both;
+}
+label{
+    width:2000px;
+    margin-top:100px;
+}
+
+.selector{
+    display:flex;
+    width:140px;
+
+}
+
+                /* TABLE 2  */
+
+.day-table{
+    width:60%;
+    display:flex;
+    margin:0 auto;
+    position: relative;
+    flex-flow: wrap;
+    justify-content: center;
+   
+}
+.table-header{
+width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+#table-bd{
+    width:100%;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.day-table .element{
+   width:100px;
+   border:none;
+   background-color:#f5f5f5;
+   padding:5px;
+   margin-bottom:10px;
+   border-radius:5px;
+}
+.hdng{
+    width:100px;
+    justify-content: center;
+    padding:7px;
+    border:none;
+    border-right: solid gray 2px;
+    border-bottom: solid gray 2px;
+    box-sizing:border-box;
+    border-radius:5px;
+}
+#calc-bd .bd-row .first {
+    border:none;
+    background-color: white;
+}
+
+.fd{
+   width:100px;
+}
+                /* BUTTONS  */
+.buttons{
+   display:contents;
+   justify-content: start;
+   margin:0 auto;
+   clear:both;
+   margin-left:50px;
+   
+}
+.button{
+   display:contents;
+   justify-content: end;
+   margin:0 auto;
+   clear:both;
+   margin-right:50px;
+   
+}
+.calculate{
+margin-top:25px;
+width:100px;
+   height:40px;
+}
+.average{
+   color: red;
+}
+.new{
+   height:7px;
+   background-color: #f5f5f5;
+   border:none;
+   border-radius: 5px;
+}
+.choose-day{
+    display:block;
+    margin-bottom: 25px;
+    width:300px;
+}
+.clear-flds{
+   height:40px;
+   margin-top:25px;
+}
+.save{
+    width:200px;
+    height:40px;
+    margin-top:25px;
+    float:right;
+}
+
+
+/* FOOD TABLE */
+
+.food-table{
+    width:100%;
+    display:flex;
+    margin:0 auto;
+    position: relative;
+    flex-flow: wrap;
+    justify-content: center;
+   
+}
+
+#food-bd{
+    width:100%;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.fd-row{
+    width:100%;
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    
+    
+}
+.element{
+    width:140px;
+    border:none;
+    background-color:#f5f5f5;
+    padding:5px;
+    margin-bottom:10px;
+    border-radius:5px;
+ }
+
+ .food-header{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+        
+    }
+.food-hdng{
+    width:150px;
+    justify-content: center;
+    padding:7px;
+    border:none;
+    border-right: solid gray 2px;
+    border-bottom: solid gray 2px;
+    box-sizing:border-box;
+    border-radius:5px;
+}
+.food-tb .fd-row .fd-type{
+    width:240px;
+}
+.food-tb #food-bd .add{
+    background-color: #35DF2C;
+}
+
+.save-fd{
+    display: block;
+    width:100px;
+    padding:5px;
+    margin-left:30px;
+}
+.delete{
+    display:flex;
+    float:right;
+    width:100px;
+    height:30px;
+    margin-right:30px;
+    justify-content: center;
+    padding:5px;
+    
+}
+.chk-box{
+    position:absolute;
+    right:-20;
+    top:10;
+    display:inline-block;
+    vertical-align: middle;
+}
