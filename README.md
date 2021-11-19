@@ -13,4 +13,5 @@ The "Clear fields" button will clear all the calculator fields.
 THE FOOD TABLE - admin side
 It displays the current food list stored in the .json file.
 
-To add an item to the list use the input fields at the start of the table.
+To add an item to the list use the input fields at the start of the table and hit "Add to list".
+If you want to delete an entry, check the box of the specific row and hit "Delete".
