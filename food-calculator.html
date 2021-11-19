@@ -207,7 +207,7 @@
     */
     function getVals(){
         var x = new XMLHttpRequest();
-        x.open("GET","/calculator/test.json", false);
+        x.open("GET","/calculator/fitness-diet-calculator/test.json", false);
         x.send();
         var data = JSON.parse(x.responseText,true);
         return JSON.stringify(data);
