@@ -1,4 +1,5 @@
 <?php
+header("Cache-Control:none");
 
 // This php section is used to get the data from the GET method used in the writetToJson();
 //Check if the data is set and is not empty.
@@ -62,7 +63,7 @@ if( isset($_GET["data"]) && !empty($_GET["data"]) ){
     */
     function getVals(){
         var x = new XMLHttpRequest();
-        x.open("GET","/calculator/test.json", false);
+        x.open("GET","/calculator/fitness-diet-calculator/test.json", false);
         x.send();
         var data = JSON.parse(x.responseText,true);
         return data;
@@ -253,7 +254,7 @@ if( isset($_GET["data"]) && !empty($_GET["data"]) ){
         var x = new XMLHttpRequest();
 
         //Get method used to send the data.
-        x.open("GET", "/calculator/food-upload.php?data="+f, false);
+        x.open("GET", "/calculator/fitness-diet-calculator/food-upload.php?data="+f, false);
         x.send();
 
         //refresh the window.
