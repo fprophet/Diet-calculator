@@ -1,4 +1,4 @@
-# Fitness diet calculator
+# Diet calculator
  THE CALCULATOR - client side
 This is a fitness diet calculator that works on a simple principle. First choose the day you want to program your meals. When adding a new meal from the dropdown menus and the Portion input is set the program will automatically fill in the rest of the row cells with the specific food values taken from the .json file.
 Portion size, carbs, proteins, fats and calories are calculated using the formula x*portion where x will be one of the elements specified earlier.
